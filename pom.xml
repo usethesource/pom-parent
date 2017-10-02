@@ -35,12 +35,12 @@
                 <repository>
                         <id>oxygen</id>
                         <layout>p2</layout>
-                        <url>http://download.eclipse.org/eclipse/updates/4.7</url>
+                        <url>http://nexus.usethesource.io/content/repositories/eclipse-oxygen/</url>
                 </repository>
                 <repository>
                         <id>cdt</id>
                         <layout>p2</layout>
-                        <url>http://download.eclipse.org/tools/cdt/releases/9.3</url>
+                        <url>http://nexus.usethesource.io/content/repositories/eclipse-cdt/</url>
                 </repository>
                 <repository>
                         <id>tm</id>
