@@ -32,6 +32,10 @@
                         <id>rascalupdatesite</id>
                         <url>https://update.rascal-mpl.org/stable</url>
                 </repository>
+		<repository>
+		<id>unstable</id>
+		<url>http://nexus.usethesource.io/content/repositories/public/</url>
+                </repository>
                 <repository>
                         <id>oxygen</id>
                         <layout>p2</layout>
