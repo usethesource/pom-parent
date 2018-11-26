@@ -47,7 +47,7 @@
                         <url>http://nexus.usethesource.io/content/repositories/eclipse-cdt/</url>
                 </repository>
                 <repository>
-                        <id>cdt</id>
+                        <id>cdt95</id>
                         <layout>p2</layout>
                         <url>http://nexus.usethesource.io/content/repositories/cdt9.5/</url>
                 </repository>
