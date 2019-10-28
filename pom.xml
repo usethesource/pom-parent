@@ -9,7 +9,6 @@
 
         <scm> 
                 <developerConnection>scm:git:ssh://git@github.com/usethesource/pom-parent</developerConnection>
-          <tag>pom-parent-0.2.0</tag>
   </scm>	
 
 	<properties>
@@ -143,8 +142,5 @@
    </configuration>
  </plugin>
 		</plugins>
-
-
 	</build>
-
 </project> 
