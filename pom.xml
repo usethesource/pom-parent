@@ -5,7 +5,7 @@
 	<groupId>io.usethesource</groupId>
 	<artifactId>pom_parent</artifactId>
 	<version>0.3.0-SNAPSHOT</version>
-	<packaging>pom</packaging>
+	<packaging>eclipse-plugin</packaging>
 
         <scm> 
                 <developerConnection>scm:git:ssh://git@github.com/usethesource/pom-parent</developerConnection>
