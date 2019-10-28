@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: pom-parent
-Bundle-SymbolicName: pom-parent
+Bundle-Name: pom_parent
+Bundle-SymbolicName: pom_parent
 Bundle-Version: 0.2.1.qualifier

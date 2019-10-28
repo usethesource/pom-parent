@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	  
 	<groupId>io.usethesource</groupId>
-	<artifactId>pom-parent</artifactId>
+	<artifactId>pom_parent</artifactId>
 	<version>0.2.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
