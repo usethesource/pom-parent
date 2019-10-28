@@ -4,12 +4,12 @@
 	  
 	<groupId>io.usethesource</groupId>
 	<artifactId>pom_parent</artifactId>
-	<version>0.3.1-SNAPSHOT</version>
+	<version>0.3.1</version>
 	<packaging>pom</packaging>
 
         <scm> 
                 <developerConnection>scm:git:ssh://git@github.com/usethesource/pom-parent</developerConnection>
-    <tag>HEAD</tag>
+    <tag>v0.3.1</tag>
   </scm>	
 
 	<properties>
@@ -112,6 +112,10 @@
 					<pomDependencies>consider</pomDependencies>
 				</configuration>
 			</plugin>
+</plugins>
+<pluginManagement>
+<plugins>
+
 <plugin>
    <groupId>org.apache.maven.plugins</groupId>
    <artifactId>maven-scm-plugin</artifactId>
@@ -143,5 +147,6 @@
    </configuration>
  </plugin>
 		</plugins>
+</pluginManagement>
 	</build>
 </project> 
