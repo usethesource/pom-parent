@@ -4,12 +4,12 @@
 
     <groupId>io.usethesource</groupId>
     <artifactId>pom_parent</artifactId>
-    <version>0.3.3</version>
+    <version>0.3.4-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <scm> 
         <developerConnection>scm:git:ssh://git@github.com/usethesource/pom-parent</developerConnection>
-    <tag>v0.3.3</tag>
+    <tag>HEAD</tag>
   </scm>	
 
     <properties>
