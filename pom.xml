@@ -132,7 +132,7 @@
                                 <includes>**/META-INF/MANIFEST.MF,**/feature.xml,**/*.product,**/category.xml</includes>
                                 <message>Changing the version to reflect the pom versions for the release</message>
                             </configuration>
-                            <phase>none</phase>
+                            <skip>true</skip>
                         </execution>
                     </executions>
                 </plugin>
@@ -148,7 +148,7 @@
                                 <preparationGoals>org.eclipse.tycho:tycho-versions-plugin:${tycho-version}:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:${maven-scm-version}:add org.apache.maven.plugins:maven-scm-plugin:${maven-scm-version}:checkin</preparationGoals>
                                 <completionGoals>org.eclipse.tycho:tycho-versions-plugin:${tycho-version}:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:${maven-scm-version}:add org.apache.maven.plugins:maven-scm-plugin:${maven-scm-version}:checkin</completionGoals>
                             </configuration>
-                            <phase>none</phase>
+                            <skip>true</skip>
                         </execution>
                     </executions>
                 </plugin>
