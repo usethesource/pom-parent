@@ -4,12 +4,13 @@
 
     <groupId>io.usethesource</groupId>
     <artifactId>pom_parent</artifactId>
-    <version>0.3.2-SNAPSHOT</version>
+    <version>0.3.2</version>
     <packaging>pom</packaging>
 
     <scm> 
         <developerConnection>scm:git:ssh://git@github.com/usethesource/pom-parent</developerConnection>
-    </scm>	
+      <tag>v0.3.2</tag>
+  </scm>	
 
     <properties>
         <tycho-version>1.4.0</tycho-version>
@@ -131,6 +132,7 @@
                                 <includes>**/META-INF/MANIFEST.MF,**/feature.xml,**/*.product,**/category.xml</includes>
                                 <message>Changing the version to reflect the pom versions for the release</message>
                             </configuration>
+                            <phase>none</phase>
                         </execution>
                     </executions>
                 </plugin>
@@ -144,6 +146,9 @@
                         <preparationGoals>org.eclipse.tycho:tycho-versions-plugin:${tycho-version}:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:${maven-scm-version}:add org.apache.maven.plugins:maven-scm-plugin:${maven-scm-version}:checkin</preparationGoals>
                         <completionGoals>org.eclipse.tycho:tycho-versions-plugin:${tycho-version}:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:${maven-scm-version}:add org.apache.maven.plugins:maven-scm-plugin:${maven-scm-version}:checkin</completionGoals>
                     </configuration>
+                    <executions>
+                        <phase>none</phase>
+                    </executions>
                 </plugin>
             </plugins>
         </pluginManagement>
