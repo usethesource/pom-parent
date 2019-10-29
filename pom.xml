@@ -4,12 +4,11 @@
 
     <groupId>io.usethesource</groupId>
     <artifactId>pom_parent</artifactId>
-    <version>0.3.2</version>
+    <version>0.3.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <scm> 
         <developerConnection>scm:git:ssh://git@github.com/usethesource/pom-parent</developerConnection>
-      <tag>v0.3.2</tag>
   </scm>	
 
     <properties>
@@ -141,13 +140,15 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-release-plugin</artifactId>
                     <version>2.5.3</version>
-                    <configuration>
-                        <tagNameFormat>v@{project.version}</tagNameFormat>
-                        <preparationGoals>org.eclipse.tycho:tycho-versions-plugin:${tycho-version}:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:${maven-scm-version}:add org.apache.maven.plugins:maven-scm-plugin:${maven-scm-version}:checkin</preparationGoals>
-                        <completionGoals>org.eclipse.tycho:tycho-versions-plugin:${tycho-version}:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:${maven-scm-version}:add org.apache.maven.plugins:maven-scm-plugin:${maven-scm-version}:checkin</completionGoals>
-                    </configuration>
                     <executions>
-                        <phase>none</phase>
+                        <execution>
+                            <configuration>
+                                <tagNameFormat>v@{project.version}</tagNameFormat>
+                                <preparationGoals>org.eclipse.tycho:tycho-versions-plugin:${tycho-version}:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:${maven-scm-version}:add org.apache.maven.plugins:maven-scm-plugin:${maven-scm-version}:checkin</preparationGoals>
+                                <completionGoals>org.eclipse.tycho:tycho-versions-plugin:${tycho-version}:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:${maven-scm-version}:add org.apache.maven.plugins:maven-scm-plugin:${maven-scm-version}:checkin</completionGoals>
+                            </configuration>
+                            <phase>none</phase>
+                        </execution>
                     </executions>
                 </plugin>
             </plugins>
