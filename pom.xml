@@ -131,8 +131,8 @@
                                 <excludes>**/target/**,**/bin/**</excludes>
                                 <includes>**/META-INF/MANIFEST.MF,**/feature.xml,**/*.product,**/category.xml</includes>
                                 <message>Changing the version to reflect the pom versions for the release</message>
+                                <skip>true</skip>
                             </configuration>
-                            <skip>true</skip>
                         </execution>
                     </executions>
                 </plugin>
@@ -147,8 +147,8 @@
                                 <tagNameFormat>v@{project.version}</tagNameFormat>
                                 <preparationGoals>org.eclipse.tycho:tycho-versions-plugin:${tycho-version}:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:${maven-scm-version}:add org.apache.maven.plugins:maven-scm-plugin:${maven-scm-version}:checkin</preparationGoals>
                                 <completionGoals>org.eclipse.tycho:tycho-versions-plugin:${tycho-version}:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:${maven-scm-version}:add org.apache.maven.plugins:maven-scm-plugin:${maven-scm-version}:checkin</completionGoals>
+                                <skip>true</skip>
                             </configuration>
-                            <skip>true</skip>
                         </execution>
                     </executions>
                 </plugin>
