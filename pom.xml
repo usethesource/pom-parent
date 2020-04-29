@@ -67,6 +67,17 @@
             <layout>p2</layout>
             <url>https://nexus.usethesource.io/content/repositories/tm-terminal-marketplace/</url>
         </repository>
+        
+        <repository>
+            <id>eclipse_2020-03</id>
+            <layout>p2</layout>
+            <url>https://nexus.usethesource.io/content/repositories/eclipse-2020-03/</url>
+        </repository>
+        <repository>
+            <id>cdt_9_11</id>
+            <layout>p2</layout>
+            <url>https://nexus.usethesource.io/content/repositories/cdt_9_11/</url>
+        </repository>
     </repositories>
 
     <pluginRepositories>
